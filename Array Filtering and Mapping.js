@@ -8,7 +8,8 @@ const people = [
     { name: 'Emran', age: 22, gender: 'male' }
 ];
 
-function filterAndMapNames(peopleArray) {
+
+const filterAndMapNames = (peopleArray) => {
     return peopleArray
         .filter(person => person.gender !== 'female')
         .map(person => person.name);

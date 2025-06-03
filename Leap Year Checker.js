@@ -1,9 +1,9 @@
 // Write a function that determines whether a given year is a leap year.
-const isLeapYear = year => {
+const isLeapYear = (year) => {
     return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
 };
 
-const checkYear = year => {
+const checkYear = (year) => {
     if (isLeapYear(year)) {
         console.log(`Happy New Year! ${year} is a leap year.`);
     } else {

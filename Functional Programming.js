@@ -6,8 +6,10 @@ const items = [
     { quantity: 1, price: 7 },
 ];
 
-const calculateTotalValue = arr =>
-    arr.reduce((total, item) => total + item.quantity * item.price, 0);
+const calculateTotalValue = (arr) => {
+    return arr.reduce((total, item) => total + item.quantity * item.price, 0)
+}
+
 
 const totalValue = calculateTotalValue(items);
 console.log('Total value:', totalValue);

@@ -8,7 +8,7 @@ const cars = [
     { make: 'Chevrolet', model: 'Camaro', year: 1969 }
 ];
 
-const sortCarsByYear = carArray => {
+const sortCarsByYear = (carArray) => {
     return [...carArray].sort((a, b) => a.year - b.year);
 };
 
